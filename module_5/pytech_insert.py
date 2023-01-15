@@ -25,8 +25,9 @@ john_student_id = students.insert_one(john).inserted_id
 thomas_student_id = students.insert_one(thomas).inserted_id
 dave_student_id = students.insert_one(dave).inserted_id
 
-print(john_student_id)
-print(thomas_student_id)
-print(dave_student_id)
+print("-- INSERT STATMENTS --")
+print("Inserted student record John Morris into the students collection with document id " + str(john_student_id))
+print("Inserted student record Thomas Smith into the students collection with document id " + str(thomas_student_id))
+print("Inserted student record Dave Rice into the students collection with document id " + str(dave_student_id))
 
 

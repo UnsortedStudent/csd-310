@@ -10,6 +10,8 @@ print("-- DISPLAYING STUDENT DOCUMENTS FROM FIND() QUERY --")
 for doc in docs:
     print(doc)
 
+print("\n")
+
 print("-- DISPLAYING STUDENT DOCUMENTS FROM FIND_ONE() QUERY --")
 doc = db.students.find_one({"student_id": "1007"})
 
