@@ -12,7 +12,7 @@ for doc in docs:
 
 print("\n")
 
-print("-- DISPLAYING STUDENT DOCUMENT 1007")
-doc = db.students.find_one({"student_id": "1007"})
+result = db.students.update_one({'student_id': '1007'}, {'$set': {'last_name': 'Anderson'}})
 
+doc = db.students.find_one({"student_id": "1007"})
 print(doc)
