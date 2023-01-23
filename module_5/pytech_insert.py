@@ -5,6 +5,7 @@ client = MongoClient(url)
 db = client.pytech
 students = db.students
 
+
 john = {
 "student_id": "1007", 
 "first_name": "John", 
