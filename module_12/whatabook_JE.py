@@ -66,11 +66,11 @@ def validate_user():
             print("\n Invalid input, please enter a number between 0 and 3.")
 
 def show_account_menu():
-#Show account menu
+#Show account menu - used notes for formatting
     try:
-        print("\n      -- Customer Menu --")
+        print("\n-- Customer Menu --")
         print("        1. Wishlist\n        2. Add Book\n        3. Main Menu")
-        account_option = int(input('        <Example enter: 1 for wishlist>: '))
+        account_option = int(input('Ex: Enter 1 for wishlist'))
 
         return account_option
     except ValueError:
